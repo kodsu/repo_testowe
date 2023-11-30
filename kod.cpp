@@ -23,7 +23,7 @@ typedef vector<ll> vl;
 typedef vector<pll> vll;
 typedef string str;
 #define BOOST ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);  
-const int MN = 505, MM = 505; 
+const int MN = 531, MM = 531; 
 int tab[MN][MN]; // 1 -> B, 2 -> C, 0 -> default pusty  
 int n, m; 
 string row;   
@@ -135,7 +135,7 @@ void wyp(){
 }  
 
 pii begpoint;  
-int begmoment;  // na free miejsce
+int begmoment;  // na wolne miejsce
 pii begtime; 
 void prerun(){
 	begpoint = {-1, -1}; 
@@ -370,7 +370,7 @@ void finalize(){
 	} 
 	int cykamo = (sz(S) -1 )/4;  
 	
-	// do part with cykle   
+	// zrob czesc z cyklami
 	cyklepart(); 
 	pii pozycja; 
 	for(int i = 0; i < n; i++){ 
@@ -407,5 +407,6 @@ int main(){
 	runfull();  
 	finalize();  
 	wyp(); 
-}
+} 
+// koniec
 
